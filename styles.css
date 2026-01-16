@@ -1,0 +1,274 @@
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* TOPO */
+.top-header {
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: #ffffff;
+}
+
+/* LOGO + NOME */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-icon {
+  width: 60px;
+  height: auto;
+}
+
+.brand-name img {
+  width: 200px;      /* TAMANHO GRANDE AQUI */
+  height: auto;
+  display: block;
+}
+
+/* BUSCA */
+.search-box {
+  display: flex;
+  width: 45%;
+  border: 1px solid #2c7dbf;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  border: none;
+  background: #fff;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+/* USUÁRIO */
+.user-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-cart a {
+  text-decoration: none;
+  color: #2c7dbf;
+  font-size: 14px;
+}
+
+.cart {
+  font-size: 22px;
+}
+
+/* MENU */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #2c7dbf;
+  padding: 12px 24px;
+}
+
+.main-nav a,
+.categories-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* CATEGORIAS */
+.categories-wrapper {
+  position: relative;
+}
+
+.categories-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 180px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.15);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.categories-menu a {
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+}
+
+.categories-menu a:hover {
+  background: #f2f2f2;
+}
+
+/* BANNER */
+.banner {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; 
+  display: block;
+}
+
+/* PRODUTOS */
+.produtos {
+  padding: 40px 20px;
+}
+
+.grid-produtos {
+  display: flex;
+  gap: 20px;
+}
+
+.produto-card {
+  width: 300px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.produto-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+.footer {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .brand-name img {
+    width: 260px;
+  }
+
+  .search-box {
+    display: none;
+  }
+}
+
+.categoria-page {
+  padding: 60px 40px;
+}
+
+.categoria-titulo {
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* GRID MODERNA */
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+}
+
+/* CARD MODERNO */
+.modern-card {
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.modern-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+.modern-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.modern-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.preco {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.btn-comprar {
+  background: #2c7dbf;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-comprar:hover {
+  background: #1f5fa0;
+}
+
+.modern-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 32px;
+}
+
+@media (max-width: 1200px) {
+  .modern-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .modern-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .modern-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+
