@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Imagens/Estética/logo-titulo.png">
+  <title>Carrinho | Legião Tricolor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top-header">
+  <div class="top-bar">
+
+    <div class="brand">
+      <a href="index.html" class="brand-link">
+        <img class="logo-icon" src="Imagens/Estética/logo.png" alt="Legião Tricolor">
+        <div class="brand-name">
+          <img src="Imagens/Estética/nome_logo.png" alt="Legião Tricolor">
+        </div>
+      </a>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="O que você está buscando?">
+      <button>🔍</button>
+    </div>
+
+    <a href="carrinho.html" class="cart">
+      <img src="Imagens/Estética/carrinho-icon.png" alt="Carrinho">
+    </a>
+
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">INÍCIO</a>
+    <a href="#">PRODUTOS</a>
+    <a href="#">CONTATO</a>
+  </nav>
+</header>
+
+<main class="carrinho-page">
+
+  <h1 class="carrinho-titulo">Seu Carrinho</h1>
+
+  <div class="carrinho-container">
+
+    <!-- LISTA DE PRODUTOS -->
+    <div class="carrinho-itens">
+
+      <div class="carrinho-item">
+        <img src="Imagens/Produtos/calça-jeans.jpg" alt="Produto">
+
+        <div class="item-info">
+          <h3>Camiseta Tricolor Clássica</h3>
+          <p class="item-preco">R$ 89,90</p>
+
+          <div class="quantidade">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="remover-item">Remover</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RESUMO -->
+    <div class="resumo-carrinho">
+
+      <h2>Resumo da compra</h2>
+
+      <div class="resumo-linha">
+        <span>Subtotal</span>
+        <span>R$ 89,90</span>
+      </div>
+
+      <div class="resumo-linha">
+        <span>Frete</span>
+        <span>R$ 15,00</span>
+      </div>
+
+      <div class="resumo-total">
+        <span>Total</span>
+        <span>R$ 104,90</span>
+      </div>
+
+      <button class="btn-finalizar">Finalizar compra</button>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Loja virtual Legião Tricolor</p>
+</footer>
+
+</body>
+</html>

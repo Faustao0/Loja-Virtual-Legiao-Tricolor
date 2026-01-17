@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="Imagens/Estética/logo-titulo.png">
-  <title>Loja Virtual Legião Tricolor</title>
+  <title>Legião Tricolor</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +11,7 @@
 <header class="top-header">
   <div class="top-bar">
 
-  <div class="brand">
+    <div class="brand">
     <a href="index.html" class="brand-link">
         <img class="logo-icon" src="Imagens/Estética/logo.png" alt="Legião Tricolor">
         <div class="brand-name">
@@ -23,14 +22,12 @@
 
     <div class="search-box">
       <input type="text" placeholder="O que você está buscando?">
-      <button aria-label="Buscar">🔍</button>
+      <button>🔍</button>
     </div>
 
     <div class="user-cart">
       <a href="#">Olá! Faça login<br><span>Ou cadastre-se</span></a>
-      <a href="carrinho.html" class="cart">
-       <img src="Imagens/Estética/carrinho-icon.png" alt="Carrinho">
-    </a>
+      <a href="#" class="cart">🛒</a>
     </div>
 
   </div>
@@ -53,26 +50,55 @@
   </nav>
 </header>
 
-<section class="banner">
-  <img src="Imagens/Estética/barnner.jpg" alt="Banner Loja virtual Legião Tricolor">
-</section>
+<main class="produto-page">
 
-<section id="produtos" class="produtos">
-  <h2>Produtos em Destaque</h2>
+  <div class="produto-container">
 
-  <div class="grid-produtos">
-    <div class="produto-card">
-      <img src="Imagens/Produtos/calça-jeans.jpg" alt="Produto">
-      <h3>Calça Jeans Preta</h3>
-      <p>R$ 99,90</p>
+    <!-- IMAGENS -->
+    <div class="produto-imagens">
+      <img class="imagem-principal" src="Imagens/Produtos/calça-jeans.jpg" alt="Cordão Tricolor">
+    </div>
+
+    <!-- INFO -->
+    <div class="produto-info">
+
+      <p class="breadcrumb">Início > Acessórios > Cordão</p>
+
+      <h1>Cordão Tricolor</h1>
+
+      <p class="preco-principal">R$ 30,00</p>
+      <p class="parcelamento">5x de R$ 6,00</p>
+
+      <!-- QUANTIDADE -->
+      <div class="quantidade">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+
+      <!-- COMPRAR -->
+      <button class="btn-comprar-grande" onclick="adicionarAoCarrinho({
+        id: 1,
+        nome: 'Cordão Tricolor',
+        preco: 30.00,
+        imagem: 'Imagens/Produtos/calça-jeans.jpg',
+        quantidade: 1
+        })">
+        ADICIONAR AO CARRINHO
+        </button>
+
+      <!-- PAGAMENTOS -->
+      <div class="pagamentos">
+        <p>Formas de pagamento:</p>
+        <ul>
+          <li>💳 Cartão de crédito (parcelado)</li>
+          <li>💳 Cartão de débito</li>
+          <li>⚡ PIX</li>
+        </ul>
+      </div>
     </div>
   </div>
-</section>
-
-<footer class="footer">
-  <p>© 2026 Loja virtual Legião Tricolor</p>
-</footer>
-
+</main>
 <script src="script.js"></script>
 </body>
 </html>
