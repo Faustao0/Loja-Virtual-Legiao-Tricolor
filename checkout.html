@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="Imagens/Estética/logo-titulo.png">
-  <title>Loja Virtual Legião Tricolor</title>
+  <title>Checkout | Legião Tricolor</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -53,38 +53,64 @@
   </nav>
 </header>
 
-<main class="carrinho-page">
+<main class="checkout-page">
 
-  <h1 class="carrinho-titulo">Meu Carrinho</h1>
+  <h1 class="checkout-titulo">Finalizar Compra</h1>
 
-  <div class="carrinho-container">
+  <div class="checkout-container">
 
-    <!-- LISTA DE PRODUTOS -->
-    <div class="carrinho-itens">
+    <!-- DADOS -->
+    <div class="checkout-form">
 
-      <div class="carrinho-item">
-        <img src="Imagens/Produtos/calça-jeans.jpg" alt="Produto">
+      <h2>Dados do Cliente</h2>
 
-        <div class="item-info">
-          <h3>Camiseta Tricolor Clássica</h3>
-          <p class="item-preco">R$ 89,90</p>
+      <input type="text" placeholder="Nome completo">
+      <input type="email" placeholder="E-mail">
+      <input type="text" placeholder="CPF">
+      <input type="text" placeholder="Telefone">
 
-          <div class="quantidade">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
-          </div>
+      <h2>Forma de Pagamento</h2>
 
-          <button class="remover-item">Remover</button>
+      <div class="pagamento-opcoes">
+        <label>
+          <input type="radio" name="pagamento" checked>
+          💳 Cartão de Crédito / Débito
+        </label>
+
+        <label>
+          <input type="radio" name="pagamento">
+          ⚡ PIX
+        </label>
+      </div>
+
+      <!-- CARTÃO -->
+      <div class="cartao-box">
+        <input type="text" placeholder="Número do cartão">
+        <input type="text" placeholder="Nome no cartão">
+        <div class="linha-cartao">
+          <input type="text" placeholder="Validade">
+          <input type="text" placeholder="CVV">
         </div>
+
+        <select>
+          <option>1x sem juros</option>
+          <option>2x sem juros</option>
+          <option>3x sem juros</option>
+          <option>6x sem juros</option>
+        </select>
+      </div>
+
+      <!-- PIX -->
+      <div class="pix-box">
+        <p>Ao finalizar, um QR Code será gerado para pagamento via PIX.</p>
       </div>
 
     </div>
 
     <!-- RESUMO -->
-    <div class="resumo-carrinho">
+    <div class="checkout-resumo">
 
-      <h2>Resumo da compra</h2>
+      <h2>Resumo da Compra</h2>
 
       <div class="resumo-linha">
         <span>Subtotal</span>
@@ -101,7 +127,7 @@
         <span>R$ 104,90</span>
       </div>
 
-      <a href="checkout.html" class="btn-finalizar">Finalizar compra</a>
+      <button class="btn-pagar">Pagar agora</button>
 
     </div>
 
