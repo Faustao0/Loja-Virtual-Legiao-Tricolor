@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="Imagens/Estética/logo-titulo.png">
-  <title>Criar Conta | Legião Tricolor</title>
+  <title>Login | Legião Tricolor</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body class="login-body">
 
 <header class="top-header">
   <div class="top-bar">
 
-    <div class="brand">
-      <a href="index.html" class="brand-link">
+  <div class="brand">
+    <a href="index.html" class="brand-link">
         <img class="logo-icon" src="Imagens/Estética/logo.png" alt="Legião Tricolor">
         <div class="brand-name">
-          <img src="Imagens/Estética/nome_logo.png" alt="Legião Tricolor">
-        </div>
-      </a>
+        <img src="Imagens/Estética/nome_logo.png" alt="Legião Tricolor">
+            </div>
+        </a>
     </div>
 
     <div class="search-box">
@@ -28,17 +27,23 @@
     </div>
 
     <div class="user-cart">
-      <a href="login.html">Olá! Faça login<br><span>Ou cadastre-se</span></a>
+      <a href="#">Olá! Faça login<br><span>Ou cadastre-se</span></a>
       <a href="carrinho.html" class="cart">
-        <img src="Imagens/Estética/carrinho-icon.png" alt="Carrinho">
-      </a>
+       <img src="Imagens/Estética/carrinho-icon.png" alt="Carrinho">
+    </a>
     </div>
 
   </div>
-
   <nav class="main-nav">
     <div class="categories-wrapper">
-      <button class="categories-btn">☰ CATEGORIAS</button>
+      <button id="categoriesBtn" class="categories-btn">☰ CATEGORIAS</button>
+
+      <div id="categoriesMenu" class="categories-menu">
+        <a href="camisetas.html">Camisetas</a>
+        <a href="calcas-bermudas.html">Calças e Bermudas</a>
+        <a href="acessorios.html">Acessórios</a>
+        <a href="bones.html">Bonés</a>
+      </div>
     </div>
 
     <a href="index.html">INÍCIO</a>
@@ -47,7 +52,7 @@
   </nav>
 </header>
 
-<main class="login-page">
+    <main class="login-page">
 
   <div class="login-container">
 
@@ -57,78 +62,44 @@
       <img src="Imagens/Estética/nome_logo.png" alt="Legião Tricolor">
     </div>
 
-    <h1>Criar conta</h1>
+    <h1>Iniciar sessão</h1>
 
     <form class="login-form">
 
-      <label for="nome">Nome completo</label>
-      <input
-        type="text"
-        id="nome"
-        placeholder="Ex: João Silva"
-        required
-      >
-
-      <label for="cpf">CPF</label>
-      <input
-        type="text"
-        id="CPF"
-        placeholder="Ex: 111.222.444-95"
-        required
-      >
-
       <label for="email">E-mail</label>
-      <input
-        type="email"
-        id="email"
+      <input 
+        type="email" 
+        id="email" 
         placeholder="ex: seuemail@email.com.br"
-        required
-      >
-
-      <label for="telefone">Número de Telefone</label>
-      <input
-        type="text"
-        id="telefone"
-        placeholder="ex: 45 99954-0304"
         required
       >
 
       <label for="senha">Senha</label>
       <div class="senha-wrapper">
-        <input
-          type="password"
-          id="senha"
-          placeholder="Crie uma senha"
+        <input 
+          type="password" 
+          id="senha" 
+          placeholder="ex: suasenha"
           required
         >
         <span class="ver-senha">👁</span>
       </div>
 
-      <label for="confirmar">Confirmar senha</label>
-      <div class="senha-wrapper">
-        <input
-          type="password"
-          id="confirmar"
-          placeholder="Repita a senha"
-          required
-        >
-        <span class="ver-senha">👁</span>
-      </div>
+      <a href="#" class="esqueceu-senha">Esqueceu a senha?</a>
 
       <button type="submit" class="btn-login">
-        CRIAR CONTA
+        INICIAR SESSÃO
       </button>
 
     </form>
 
     <p class="criar-conta">
-      Já possui uma conta?
-      <a href="login.html">Iniciar sessão</a>
+      Não possui uma conta ainda?
+      <a href="cadastro.html">Criar uma conta</a>
     </p>
 
   </div>
-
-</main>
+  </main>
 
 <script src="script.js"></script>
 </body>

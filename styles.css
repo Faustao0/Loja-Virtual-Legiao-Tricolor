@@ -632,6 +632,7 @@ body {
   width: 100%;
   padding: 18px;
   background: linear-gradient(135deg, #0a3cff, #2c7dbf);
+  box-sizing: border-box; 
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -767,5 +768,123 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== LOGIN ===== */
+.login-body {
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Centraliza SOMENTE o card */
+.login-page {
+  min-height: calc(100vh - 160px); /* altura do header */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.login-container {
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.login-brand img:first-child {
+  width: 48px;
+}
+
+.login-brand img:last-child {
+  width: 180px;
+}
+
+.login-container h1 {
+  text-align: center;
+  color: #2c7dbf;
+  margin-bottom: 30px;
+}
+
+.login-form label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  border-color: #2c7dbf;
+  outline: none;
+}
+
+.senha-wrapper {
+  position: relative;
+}
+
+.ver-senha {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.esqueceu-senha {
+  display: block;
+  text-align: right;
+  font-size: 13px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: #2c7dbf;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 14px;
+  background: #0a3cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #072bbd;
+}
+
+.criar-conta {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 14px;
+}
+
+.criar-conta a {
+  color: #2c7dbf;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 
 
